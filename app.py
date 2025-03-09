@@ -9,9 +9,10 @@ from datetime import datetime
 import uuid
 import pandas as pd
 from io import StringIO
-
+from dotenv import load_dotenv
+load_dotenv()
 # Configuration
-API_URL = "http://localhost:8000"  # FastAPI backend URL
+API_URL = os.getenv("API_URL")
 SUPPORTED_EXTENSIONS = ["pdf", "txt", "docx", "csv"]
 
 # App title and configuration
