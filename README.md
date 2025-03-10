@@ -1,7 +1,8 @@
 # Document Q&A System
 
 This project is a **Document Q&A System** that allows users to upload documents and ask questions about their content. The system uses a combination of **FastAPI** for the backend and **Streamlit** for the frontend. It leverages **OpenAI's language models** and **FAISS** for vector storage to provide accurate and relevant answers to user queries.
-
+![alt text](image.png)
+![img.png](img.png)
 ## Project Structure
 
 ```bash
@@ -102,6 +103,23 @@ uvicorn main:app --host 0.0.0.0 --port 8000 --reload
 ```bash
 streamlit run app.py
 ```
+
+## Running the Code
+
+### Steps to Use the Document Q&A System:
+
+1. **Upload Documents**  
+   - Open the frontend at **[http://localhost:8501](http://localhost:8501)** (or run `streamlit run app.py` if running locally).  
+   - Use the **Upload Documents** section to upload one or multiple documents in **PDF, TXT, DOCX, or CSV** formats.  
+
+2. **Process Documents**  
+   - After uploading, **click the "Process" button** to process the documents.  
+   - This step is necessary because multiple documents can be uploaded at once, and automatic processing might not always be ideal.  
+
+3. **Ask Questions**  
+   - Once processing is complete, use the chat interface to ask questions about the uploaded documents.  
+   - The system will retrieve relevant information from the processed documents and provide accurate answers.  
+
 
 ## Conclusion
 This **Document Q&A System** provides a powerful and flexible way to interact with document content using natural language queries. By leveraging modern NLP techniques and efficient vector storage, it offers accurate and relevant answers to user questions.

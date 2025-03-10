@@ -1,7 +1,7 @@
 # chat_manager.py - Chat history and LLM integration
 from langchain_openai import ChatOpenAI
 from langchain.chains import ConversationalRetrievalChain
-from langchain.memory import ConversationBufferMemory, ChatMessageHistory
+from langchain_community.chat_message_histories import ChatMessageHistory
 from langchain.memory import ConversationBufferMemory
 from langchain_community.vectorstores import FAISS
 from typing import List, Dict, Any, Tuple, Optional
